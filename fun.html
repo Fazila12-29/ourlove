@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fun & Quiz</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Hi Love!</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="reasons.html">10 Reasons</a></li>
+      <li><a href="letters.html">Letters to You</a></li>
+      <li><a href="fun.html" class="active">Fun & Quiz</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <h2>Fun & Interactive</h2>
+    <div class="quiz-section">
+      <h3>How well do you know me?</h3>
+      <form id="quiz-form">
+        <div class="quiz-q">
+          <p>1. Where did we have our first date?</p>
+          <input type="radio" name="q1" value="cafe" id="cafe"><label for="cafe">A cozy cafe</label><br>
+          <input type="radio" name="q1" value="beach" id="beach"><label for="beach">The beach</label><br>
+          <input type="radio" name="q1" value="park" id="park"><label for="park">A park</label>
+        </div>
+        <div class="quiz-q">
+          <p>2. What’s my favorite time of day?</p>
+          <input type="radio" name="q2" value="morning" id="morning"><label for="morning">Morning</label><br>
+          <input type="radio" name="q2" value="night" id="night"><label for="night">Night</label><br>
+          <input type="radio" name="q2" value="afternoon" id="afternoon"><label for="afternoon">Afternoon</label>
+        </div>
+        <div class="quiz-q">
+          <p>3. Which place do I want to visit with you?</p>
+          <input type="radio" name="q3" value="paris" id="paris"><label for="paris">Paris</label><br>
+          <input type="radio" name="q3" value="goa" id="goa"><label for="goa">Goa</label><br>
+          <input type="radio" name="q3" value="newyork" id="newyork"><label for="newyork">New York</label>
+        </div>
+        <button type="button" class="love-btn" onclick="scoreQuiz()">My Love</button>
+      </form>
+      <div id="quiz-result"></div>
+    </div>
+    <div class="confetti-section">
+      <button class="love-btn" onclick="showConfetti()">My Love</button>
+      <div id="love-message" class="hidden">I love you more than words can say! 💖</div>
+    </div>
+  </div>
+  <script src="fun.js"></script>
+</body>
+</html>

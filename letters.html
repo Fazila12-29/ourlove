@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Letters to You</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Hi Love!</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="reasons.html">10 Reasons</a></li>
+      <li><a href="letters.html" class="active">Letters to You</a></li>
+      <li><a href="fun.html">Fun & Quiz</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <h2>Letters to You</h2>
+    <div class="letters">
+      <div class="envelope-card">
+        <button class="love-btn" onclick="openLetter(this.parentElement)">My Love</button>
+        <div class="envelope"></div>
+        <div class="letter-content handwriting">
+          <p>My Dearest,</p>
+          <p>You are my safe place, my joy, and my greatest adventure. Every day with you is a blessing. I love you more than words can say.</p>
+          <p class="sign">Forever yours</p>
+        </div>
+      </div>
+      <div class="envelope-card">
+        <button class="love-btn" onclick="openLetter(this.parentElement)">My Love</button>
+        <div class="envelope"></div>
+        <div class="letter-content handwriting">
+          <p>Sweetheart,</p>
+          <p>With you, love feels easy, real, and beautiful. Thank you for making me feel special every single day. I love you!</p>
+          <p class="sign">Always,</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openLetter(card) {
+      card.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

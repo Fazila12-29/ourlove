@@ -1,0 +1,14 @@
+.confetti {
+  position: fixed;
+  top: -20px;
+  width: 12px;
+  height: 18px;
+  border-radius: 6px;
+  opacity: 0.9;
+  z-index: 9999;
+  animation: confetti-fall 3.2s linear forwards;
+}
+@keyframes confetti-fall {
+  0% { transform: translateY(0) rotate(0deg);}
+  100% { transform: translateY(90vh) rotate(360deg);}
+}
